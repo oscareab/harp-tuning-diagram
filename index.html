@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Harp Tuning Diagram</title>
+        <link rel="icon" type="image/ico" href="images/icon.ico">
+        
+        <link rel="stylesheet" href="styles/style.css"> 
+        <script src="scripts/scripts.js"></script>
+    </head>
+
+    <body onload="init()" onclick="checkButtons()">
+        <div class="notes">
+            <p>D</p>
+            <p class="note">B</p>
+            <p class="note">C</p>
+            <p class="note">E</p>
+            <p class="note">F</p>
+            <p class="note">G</p>
+            <p class="note">A</p>
+        </div>
+        
+        <div>
+            <label>
+                <input type="radio" name="d" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>
+                <input type="radio" name="c" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>                
+                <input type="radio" name="b" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>                
+                <input type="radio" name="e" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>                
+                <input type="radio" name="f" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>                
+                <input type="radio" name="g" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+            <label>                
+                <input type="radio" name="a" value="flat">
+                <img src="images/Flat.png" alt="flat" class="flatPic">
+            </label>
+        </div>
+
+        <div>
+            <label>                
+                <input type="radio" name="d" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>                
+                <input type="radio" name="c" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>                
+                <input type="radio" name="b" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>               
+                <input type="radio" name="e" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>                
+                <input type="radio" name="f" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>                
+                <input type="radio" name="g" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+            <label>                
+                <input type="radio" name="a" value="nat" checked>
+                <img src="images/Natural sign.png" alt="natural" class="natPic">
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <input type="radio" name="d" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="c" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="b" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="e" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="f" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="g" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+            <label>                
+                <input type="radio" name="a" value="sharp">
+                <img src="images/Sharp.png" alt="sharp" class="sharpPic">
+            </label>
+        </div>
+        
+        <div>
+            <canvas id="c" width="600" height="200"></canvas>
+        </div>
+    
+        <div>
+            <button onclick="download()">Download!</button>
+        </div>
+
+        <div class="footer">
+            <p>Oscar Avila 2023</p>
+        </div>
+    </body> 
+</html>
