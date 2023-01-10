@@ -61,7 +61,7 @@ function drawTuning() {
 }
 
 function tuningToString() {
-    notes = ['D', 'B', 'C', 'E', 'F', 'G', 'A'];
+    notes = ['D', 'C', 'B', 'E', 'F', 'G', 'A'];
 
     for(i = 0; i < tuning.length; i++) {
         if(tuning[i] == 'sharp') {
